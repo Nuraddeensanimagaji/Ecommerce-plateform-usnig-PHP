@@ -1,0 +1,68 @@
+/* Shopping Cart Page */
+.cart {
+    padding: 2rem;
+    text-align: center;
+}
+
+.cart h2 {
+    margin-bottom: 1.5rem;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.cart-table th,
+.cart-table td {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+}
+
+.cart-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.cart-table input[type="number"] {
+    width: 60px;
+    padding: 0.5rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.cart-table .remove-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.cart-table .remove-btn:hover {
+    background-color: darkred;
+}
+
+.cart-total {
+    text-align: right;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.checkout-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background-color: darkgreen;
+}

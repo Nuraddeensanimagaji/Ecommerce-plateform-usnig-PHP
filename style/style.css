@@ -1,0 +1,354 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 2rem;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+/* Filters Section */
+.filters {
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+.filters h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.filters form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.filters label {
+    font-weight: bold;
+}
+
+.filters input,
+.filters select,
+.filters button {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.filters button {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background-color: darkgreen;
+}
+
+/* Products Section */
+.products {
+    padding: 2rem;
+    text-align: center;
+}
+
+.products h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.product-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-card p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: green;
+}
+
+.product-card .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.product-card .btn:hover {
+    background: #555;
+}
+
+/* Product Details Page */
+.product-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    max-width: 500px;
+}
+
+.product-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.product-info p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.product-info .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.product-info .btn:hover {
+    background-color: darkgreen;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact label {
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #555
+}
+/* Sell Form Styles */
+.sell-form {
+    padding: 2rem;
+    text-align: center;
+}
+
+.sell-form h2 {
+    margin-bottom: 1.5rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background: #f9f9f9;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+    /* Sell Form Styles */
+.sell-form {
+    padding: 2rem;
+    text-align: center;
+}
+
+.sell-form h2 {
+    margin-bottom: 1.5rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background: #f9f9f9;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+/**/
