@@ -9,11 +9,11 @@ if (!isset($_SESSION['cart'])) {
 // Handle adding items to the cart
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['action'] == 'add') {
     $product_id = $_POST['product_id'];
-    $quantity = $_POST['quantity'];
+    //  $quantity = $_POST['quantity'];
 
     // Check if the product is already in the cart
     if (isset($_SESSION['cart'][$product_id])) {
-        $_SESSION['cart'][$product_id] += $quantity;
+       // $_SESSION['cart'][$product_id] += $quantity;
     } else {
         $_SESSION['cart'][$product_id] = $quantity;
     }
@@ -47,7 +47,7 @@ if ($conn->connect_error) {
 $product_ids = array_keys($_SESSION['cart']);
 if (count($product_ids) > 0) {
     $ids = implode(',', $product_ids);
-    $sql = "SELECT * FROM bicycles WHERE id IN ($ids)";
+    $sql = "SELECT * FROM products WHERE id IN ($ids)";
     $result = $conn->query($sql);
     $products = $result->fetch_all(MYSQLI_ASSOC);
 } else {
@@ -63,7 +63,7 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart - Cycle-Connect</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style /style.css">
     <link rel="stylesheet" href="style/cart.css">
 </head>
 <body>
@@ -133,6 +133,20 @@ $conn->close();
     </section>
 
     <!-- Footer -->
+     <pre>
+
+
+
+            
+
+
+
+
+
+
+
+     
+     </pre>
     <footer>
         <p>&copy; 2025 Cycle-Connect. All rights reserved.</p>
     </footer>

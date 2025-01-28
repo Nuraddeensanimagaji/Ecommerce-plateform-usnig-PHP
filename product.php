@@ -57,7 +57,6 @@ $result = $conn->query($sql);
                     echo '<form method="POST" action="cart.php">';
                     echo '<input type="hidden" name="action" value="add">';
                     echo '<input type="hidden" name="product_id" value="' . $row["id"] . '">';
-                    echo '<input type="number" name="quantity" value="1" min="1" max="' . $row["stock"] . '">';
                     echo '<button type="submit">Add to Cart</button>';
                     echo '</form>';
                     echo '</div>';

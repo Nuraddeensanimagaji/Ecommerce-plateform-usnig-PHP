@@ -15,8 +15,8 @@
         <nav>
             <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="product.php">Buy Bicycles</a></li>
-                <li><a href="sell.php">Sell Bicycle</a></li>
+                <li><a href="product.php">products</a></li>
+                <li><a href="sell.php">Sell products</a></li>
                 <li><a href="contact.php">Contact</a></li>
             </ul>
         </nav>
@@ -43,6 +43,9 @@
     </section>
 
     <!-- Footer Section -->
+     <pre>
+
+     </pre>
     <footer>
         <p>&copy; 2025 Cycle-Connect. All rights reserved.</p>
     </footer>

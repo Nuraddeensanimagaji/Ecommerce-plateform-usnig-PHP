@@ -35,7 +35,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <section class="auth-form">
-        <h2>Login</h2>
+        <pre>
+
+
+
+
+
+
+        
+        </pre>
         <?php if (isset($_SESSION['error'])): ?>
             <p style="color: red;"><?php echo $_SESSION['error']; unset($_SESSION['error']); ?></p>
         <?php endif; ?>

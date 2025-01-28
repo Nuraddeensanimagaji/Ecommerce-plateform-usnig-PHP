@@ -15,21 +15,31 @@
         <nav>
             <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="product.php">Buy Bicycles</a></li>
-                <li><a href="sell.php">Sell Bicycle</a></li>
+                <li><a href="product.php">products</a></li>
+                <li><a href="sell.php">Sell products</a></li>
                 <li><a href="admin_login.php">Admin</a></li>
                 <li><a href="contact.php">Contact</a></li>
             </ul>
         </nav>
     </header>
+    
 
     <!-- Hero Section -->
     <section class="hero">
         <h2>Welcome to Cycle-Connect!</h2>
-        <p>Your one-stop destination for buying and selling bicycles.</p>
-        <a href="product.php" class="btn">Browse Bicycles</a>
+        <p>Your one-stop destination for buying and selling products!!!</p>
+        <a href="product.php" class="btn">Browse products</a>
     </section>
 <pre>
+
+
+
+
+
+
+
+
+
 
 
 

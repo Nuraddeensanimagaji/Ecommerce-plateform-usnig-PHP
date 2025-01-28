@@ -15,8 +15,8 @@
         <nav>
             <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="product.php">Buy Bicycles</a></li>
-                <li><a href="sell.php">Sell Bicycle</a></li>
+                <li><a href="product.php">products</a></li>
+                <li><a href="sell.php">Sell products </a></li>
                 <li><a href="contact.php">Contact</a></li>
             </ul>
         </nav>
@@ -24,10 +24,10 @@
 
     <!-- Sell Bicycle Form -->
     <section class="sell-form">
-        <h2>Sell Your Bicycle</h2>
+        <h2>Sell Your products</h2>
         <form action="add_bicycle.php" method="post" enctype="multipart/form-data">
             <div class="form-group">
-                <label for="bicycleName">Bicycle Name:</label>
+                <label for="bicycleName">product Name:</label>
                 <input type="text" id="bicycleName" name="bicycleName" required>
             </div>
             <div class="form-group">
@@ -50,7 +50,7 @@
                 <label for="bicycleStock">Stock:</label>
                 <input type="number" id="bicycleStock" name="bicycleStock" required>
             </div>
-            <button type="submit">Sell Bicycle</button>
+            <button type="submit">Sell product</button>
         </form>
     </section>
 

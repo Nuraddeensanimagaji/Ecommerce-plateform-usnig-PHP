@@ -29,7 +29,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <section class="auth-form">
-        <h2>Register</h2>
+        <pre>
+
+
+
+
+
+        </pre>
         <?php if (isset($_SESSION['error'])): ?>
             <p style="color: red;"><?php echo $_SESSION['error']; unset($_SESSION['error']); ?></p>
         <?php endif; ?>
@@ -42,10 +48,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-
-            <button type="submit">Register</button>
             <p style="text-align:center">Already have an account? <a href="login.php">Login here</a></p>
-        </form>
+        
+            <button type="submit">Register</button>
+            </form>
     </section>
 </body>
 </html>
