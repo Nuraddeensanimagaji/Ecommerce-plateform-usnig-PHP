@@ -147,7 +147,7 @@ $result = $conn->query($sql);
     <title>Admin Panel - Cycle-Connect</title>
     <link rel="stylesheet" href="style/admin.css">
 </head>
-<body>
+<ody>
     <!-- Header -->
     <header>
         <div class="logo">
@@ -157,9 +157,7 @@ $result = $conn->query($sql);
             <ul>
                 <li><a href="index.php">Home</a></li>
                 <li><a href="product.php">Products</a></li>
-                <li><a href="cart.php">Cart</a></li>
-                <li><a href="contact.php">Contact</a></li>
-                <li><a href="admin.php">Admin</a></li>
+                <li><a href="admin_dashboard.php">Dashboard</a></li>
             </ul>
         </nav>
     </header>
@@ -230,9 +228,5 @@ $result = $conn->query($sql);
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Cycle-Connect. All rights reserved.</p>
-    </footer>
-</body>
+        </body>
 </html>

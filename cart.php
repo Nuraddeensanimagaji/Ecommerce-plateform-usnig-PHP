@@ -9,11 +9,11 @@ if (!isset($_SESSION['cart'])) {
 // Handle adding items to the cart
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['action'] == 'add') {
     $product_id = $_POST['product_id'];
-    //  $quantity = $_POST['quantity'];
+    $quantity = isset($_POST['quantity']) ? (int)$_POST['quantity'] : 1; // Default quantity to 1 if not set
 
     // Check if the product is already in the cart
     if (isset($_SESSION['cart'][$product_id])) {
-       // $_SESSION['cart'][$product_id] += $quantity;
+        $_SESSION['cart'][$product_id] += $quantity;
     } else {
         $_SESSION['cart'][$product_id] = $quantity;
     }
@@ -32,6 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['a
     $_SESSION['cart'][$product_id] = $quantity;
 }
 
+// Fetch products from the database
 // Fetch products from the database
 $servername = "localhost";
 $username = "root";

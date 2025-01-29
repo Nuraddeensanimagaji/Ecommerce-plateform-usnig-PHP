@@ -1,68 +1,147 @@
-/* Shopping Cart Page */
-.cart {
-    padding: 2rem;
-    text-align: center;
-}
-
-.cart h2 {
-    margin-bottom: 1.5rem;
-}
-
-.cart-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 2rem;
-}
-
-.cart-table th,
-.cart-table td {
-    border: 1px solid #ddd;
-    padding: 1rem;
-    text-align: center;
-}
-
-.cart-table th {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
-    font-weight: bold;
 }
 
-.cart-table input[type="number"] {
-    width: 60px;
-    padding: 0.5rem;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h3 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Table Styles */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    text-align: left;
 }
 
-.cart-table .remove-btn {
-    background-color: red;
-    color: white;
+table th {
+    background-color: #f4f4f4;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table img {
+    max-width: 50px;
+    height: auto;
+}
+
+/* Button Styles */
+button {
+    background-color: #333;
+    color: #fff;
     border: none;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Form Styles */
+form {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
     cursor: pointer;
 }
 
-.cart-table .remove-btn:hover {
-    background-color: darkred;
+form button:hover {
+    background-color: #555;
 }
 
-.cart-total {
-    text-align: right;
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    font-weight: bold;
+/* Proceed to Checkout Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+    width: fit-content;
 }
 
-.checkout-btn {
-    background-color: green;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 0.75rem 1.5rem;
-    cursor: pointer;
-}
-
-.checkout-btn:hover {
-    background-color: darkgreen;
+.button:hover {
+    background-color: #218838;
 }

@@ -14,7 +14,7 @@ if (!isset($_SESSION['cart']) || count($_SESSION['cart']) == 0) {
     exit;
 }
 
-// Fetch cart items
+// Fetch cart items for the logged-in user
 $product_ids = array_keys($_SESSION['cart']);
 $products = [];
 if (count($product_ids) > 0) {
@@ -58,10 +58,11 @@ $conn->close();
     </header>
 
     <!-- Checkout Section -->
-    <section class="checkout"><pre>
-        
-    </pre>
-        <form action="index.php" method="post">
+    <section class="checkout">
+<pre>
+    
+</pre>
+        <form action="process_checkout.php" method="post">
             <h3>Shipping Information</h3>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -71,6 +72,7 @@ $conn->close();
             <select id="payment_method" name="payment_method" required>
                 <option value="credit_card">Credit Card</option>
                 <option value="paypal">PayPal</option>
+                <option value="cod">Cash on Delivery</option>
             </select>
             <h3>Order Summary</h3>
             <ul>
@@ -88,7 +90,6 @@ $conn->close();
 
 
 
-
 </pre>
     <!-- Footer -->
     <footer>
@@ -96,4 +97,3 @@ $conn->close();
     </footer>
 </body>
 </html>
-<script src="checkout.js"></script>
